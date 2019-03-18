@@ -1,0 +1,74 @@
+﻿
+<div class="row">
+    <div class="col-xs-12 col-sm-6">
+        <div class="form-group form-group-sm">
+            <label for="txtNombres" class="col-xs-12 col-sm-5 control-label text-left">Nombres</label>
+            <div class="col-xs-12 col-sm-4 nrp">
+                <input type="text"
+                       class="form-control"
+                       id="txtNombres"
+                       name="txtNombres"
+                       placeholder="nombres"
+                       required
+                       ng-model="cvm.ui.usuario.Nombres">
+            </div>
+
+            <span class="input-group-btn">
+                <button class="btn btn-sm btn-default" type="button"
+                        id="btnLookupCentroDeGestion"
+                        ng-click="cvm.fx.showSearchUsuario();">
+                    <i class="fa fa-search"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-6">
+        <div class="form-group form-group-sm">
+            <label for="txtApellidoPaterno" class="col-xs-12 col-sm-4 control-label text-left">Username</label>
+            <div class="col-xs-12 col-sm-4 nrp">
+                <input type="text"
+                       class="form-control"
+                       id="txtApellidoPaterno"
+                       name="txtApellidoPaterno"
+                       placeholder="apellido paterno"
+                       ng-model="cvm.ui.usuario.ApellidoPaterno"
+                       required>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-6">
+            <div class="form-group form-group-sm">
+                <label for="txtUsername" class="col-xs-12 col-sm-5 control-label text-left">Apellido Paterno</label>
+                <div class="col-xs-12 col-sm-4 nrp">
+                    <input type="text"
+                           class="form-control"
+                           id="txtUsername"
+                           name="txtUsername"
+                           placeholder="username"
+                           ng-model="cvm.ui.usuario.Username"
+                           required>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <div class="form-group form-group-sm">
+                <label for="txtApellidoMaterno" class="col-xs-12 col-sm-4 control-label text-left">Apellido Materno</label>
+                <div class="col-xs-12 col-sm-4 nrp">
+                    <input type="text"
+                           class="form-control"
+                           id="txtApellidoMaterno"
+                           name="txtApellidoMaterno"
+                           placeholder="apellido materno"
+                           ng-model="cvm.ui.usuario.ApellidoMaterno"
+                           required>
+                </div>
+            </div>
+        </div>
+    </div>
+

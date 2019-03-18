@@ -1,0 +1,12 @@
+C:\Users\Rorro\source\repos\PruebaXMS\PruebaXMS.CommunElement\bin\Debug\PruebaXMS.CommunElement.dll
+C:\Users\Rorro\source\repos\PruebaXMS\PruebaXMS.CommunElement\bin\Debug\PruebaXMS.CommunElement.pdb
+C:\Users\Rorro\source\repos\PruebaXMS\PruebaXMS.CommunElement\obj\Debug\PruebaXMS.CommonElement.csprojAssemblyReference.cache
+C:\Users\Rorro\source\repos\PruebaXMS\PruebaXMS.CommunElement\obj\Debug\PruebaXMS.CommonElement.csproj.CoreCompileInputs.cache
+C:\Users\Rorro\source\repos\PruebaXMS\PruebaXMS.CommunElement\obj\Debug\PruebaXMS.CommunElement.dll
+C:\Users\Rorro\source\repos\PruebaXMS\PruebaXMS.CommunElement\obj\Debug\PruebaXMS.CommunElement.pdb
+C:\Users\Rorro\Desktop\PruebaXMS\PruebaXMS.CommunElement\bin\Debug\PruebaXMS.CommunElement.dll
+C:\Users\Rorro\Desktop\PruebaXMS\PruebaXMS.CommunElement\bin\Debug\PruebaXMS.CommunElement.pdb
+C:\Users\Rorro\Desktop\PruebaXMS\PruebaXMS.CommunElement\obj\Debug\PruebaXMS.CommonElement.csprojAssemblyReference.cache
+C:\Users\Rorro\Desktop\PruebaXMS\PruebaXMS.CommunElement\obj\Debug\PruebaXMS.CommonElement.csproj.CoreCompileInputs.cache
+C:\Users\Rorro\Desktop\PruebaXMS\PruebaXMS.CommunElement\obj\Debug\PruebaXMS.CommunElement.dll
+C:\Users\Rorro\Desktop\PruebaXMS\PruebaXMS.CommunElement\obj\Debug\PruebaXMS.CommunElement.pdb

@@ -1,0 +1,39 @@
+﻿<div class="container-fluid">
+    <h2 class="page-header lead ntm" id="titleForm">Listado de Usuarios</h2>
+    <br />
+    <div class="float-right">
+        <button type="button" class="btn btn-outline-primary btn-sm" (click)="nuevo()">Nuevo</button>
+    </div>
+    <br />
+    <br />
+    <table class="table">
+        <thead class="table-secondary">
+            <tr>
+                <th scope="col">Nombre Completo</th>
+                <th scope="col">Username</th>
+                <th scope="col">País</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of  users">
+                <td class="text-left" style="cursor: pointer;" (click)="rowSelected(item)">
+                    {{user.Nombres + ' ' + user.ApellidoPaterno + ' ' + user.ApellidoMaterno}}
+                </td>
+
+                <td class="text-left" style="cursor: pointer;" (click)="rowSelected(item)">
+                    {{user.Username}}
+                </td>
+
+                <td class="text-left" style="cursor: pointer;" (click)="rowSelected(item)">
+                    {{user.Pais.Nombre}}
+                </td>
+
+            </tr>
+
+            <tr *ngIf="users.length == 0">
+                <td colspan="12" class="text-center">no se encontraron registros</td>
+            </tr>
+        </tbody>
+    </table>
+  
+</div>

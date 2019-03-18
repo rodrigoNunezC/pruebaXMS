@@ -1,0 +1,63 @@
+﻿
+.mainContentBottomPadding {
+    padding-bottom: 20px !important;
+}
+
+
+.nlp {
+    padding-left: 0 !important;
+}
+
+.nrp {
+    padding-right: 0 !important;
+}
+
+.ntp {
+    padding-top: 4px !important;
+}
+
+.nbp {
+    padding-bottom: 0 !important;
+}
+
+.nlm {
+    margin-left: 0 !important;
+}
+
+.nrm {
+    margin-right: 0 !important;
+}
+
+.ntm {
+    margin-top: 0 !important;
+}
+
+.nbm {
+    margin-bottom: 0 !important;
+}
+
+.mainTableSpace {
+    margin-top:20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.ListHeight {
+    overflow: auto;
+    height: 40px;
+}
+
+.cursorPointer {
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .nlp {
+        padding-left: 15px !important;
+    }
+
+    .nrp {
+        padding-right: 15px !important;
+    }
+}

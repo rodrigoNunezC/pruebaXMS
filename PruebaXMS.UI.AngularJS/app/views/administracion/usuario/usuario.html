@@ -1,0 +1,89 @@
+﻿<div class="container-fluid">
+    <fieldset ng-disabled="waitingForHttp" ng-show="vm.ui.view.active == 'usuario'">
+        <h2 class="page-header lead ntm" id="titleForm">Nuevo Usuario</h2>
+        <form name="vm.formSubmit">
+            <div class="form-horizontal">
+                <div class="well">
+
+                    <component-usuario view="vm.ui.view"
+                                       ng-model="vm.ui.usuario">
+                    </component-usuario>
+
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group form-group-sm">
+                                <label for="txtpassword" class="col-xs-12 col-sm-5 control-label text-left">Password</label>
+                                <div class="col-xs-12 col-sm-4 nrp">
+                                    <input type="text"
+                                           class="form-control"
+                                           id="txtpassword"
+                                           name="txtpassword"
+                                           placeholder="*************"
+                                           required
+                                           ng-model="vm.ui.usuario.Password">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group form-group-sm">
+                                <div ng-class="{ 'has-error': vm.formSubmit.ddlPais.$touched && vm.formSubmit.ddlPais.$invalid }">
+                                    <label for="ddlPais" class="col-xs-12 col-sm-4 control-label text-left">Pais</label>
+                                    <div class="col-xs-12 col-sm-4 nrp">
+                                        <select class="form-control"
+                                                id="ddlPais"
+                                                name="ddlPais"
+                                                required
+                                                ng-model="vm.ui.usuario.Pais.PaisId"
+                                                get-paises="vm.ui.paises"
+                                                ng-options="option.PaisId as option.Nombre for option in vm.ui.paises">
+                                            <option value="">-- sin selección --</option>
+                                        </select>
+                                        <div class="help-block"
+                                             ng-if="vm.formSubmit.ddlPais.$touched && vm.formSubmit.ddlPais.$invalid"
+                                             ng-messages="vm.formSubmit.ddlPais.$error">
+                                            <div class="text-danger" ng-message="required">campo requerido</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group form-group-sm">
+                                <label for="txtpassword" class="col-xs-12 col-sm-5 control-label text-left">Confirmar Password</label>
+                                <div class="col-xs-12 col-sm-4 nrp">
+                                    <input type="text"
+                                           class="form-control"
+                                           id="txtpassword"
+                                           name="txtpassword"
+                                           placeholder="*************"
+                                           required
+                                           ng-model="vm.ui.usuario.ConfirmPassword">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+                    <div class="pull-right">
+                        <button id="btnLimpiar" class="btn btn-sm btn-default" ng-click="vm.fx.cleanInputs();">
+                            limpiar campos
+                        </button>
+                        <button id="btnGrabar" class="btn btn-sm btn-primary" ng-click="vm.fx.upsert()"
+                                form-submit="vm.formSubmit" show-validation="vm.ui.showValidation">
+                            grabar
+                        </button>
+                    </div>
+            </form>
+    </fieldset>
+
+    <Component-search-usuario ng-if="vm.ui.view.active == 'searchUsuario'"
+                               view="vm.ui.view"
+                               ng-model="vm.ui.usuario">
+    </Component-search-usuario>
+
+</div>

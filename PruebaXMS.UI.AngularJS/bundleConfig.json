@@ -1,0 +1,78 @@
+﻿[
+  {
+    "outputFileName": "app/bundles/cssBundle.css",
+    "inputFiles": [
+      "bower_components/angular-loading-bar/build/loading-bar.css",
+      "bower_components/angular-toastr/dist/angular-toastr.css",
+      "bower_components/bootstrap/dist/css/bootstrap.css",
+      "bower_components/bootstrap/dist/css/bootstrap-theme.css",
+      "bower_components/bootstrap/dist/css/bootstrap-theme.min.css",
+      "content/xmsBasic.css",
+      "bower_components/please-wait/build/please-wait.css",
+      "bower_components/fontawesome/css/all.css"
+
+    ]
+  },
+  {
+    "outputFileName": "app/bundles/JQueryScriptsBundle.js",
+    "inputFiles": [
+
+      "bower_components/jquery/dist/jquery.js"
+      
+    ]
+  },
+  {
+    "outputFileName": "app/bundles/scriptsBundle.js",
+    "inputFiles": [
+      "bower_components/angular/angular.js",
+      "bower_components/angular-loading-bar/build/loading-bar.min.js",
+      "bower_components/angular-route/angular-route.min.js",
+      "bower_components/bower_components/angular-scroll/angular-scroll.min.js",
+      "bower_components/angular-toastr/dist/angular-toastr.tpls.min.js",
+      "bower_components/bootstrap/dist/js/bootstrap.js"
+    ]
+  },
+  {
+    "outputFileName": "app/bundles/controllersBundle.js",
+    "inputFiles": [
+
+      "app/views/administracion/usuario/usuario.controller.js"
+    ]
+  },
+  {
+    "outputFileName": "app/bundles/directivesBundle.js",
+    "inputFiles": [
+
+      "app/directives/xms.directives.module.js"
+    ]
+  },
+  {
+    "outputFileName": "app/bundles/servicesBundle.js",
+    "inputFiles": [
+
+      "app/services/usuario.service.js",
+      "app/services/pais.service.js"
+    ]
+  },
+
+  {
+    "outputFileName": "app/bundles/componentsBundle.js",
+    "inputFiles": [
+
+      "app/components/xms.components.module.js"
+    ]
+  },
+  {
+    "outputFileName": "app/bundles/app.js",
+    "inputFiles": [
+      "app/app.js"
+    ]
+  },
+  {
+    "outputFileName": "app/bundles/appConfig.js",
+    "inputFiles": [
+      "app/appConfig.js"
+    ]
+  }
+
+]

@@ -1,0 +1,100 @@
+﻿<br />
+<h2 class="page-header lead ntm" id="titleForm">Nuevo Usuario</h2>
+<br />
+<div class="row">
+    <div class="col-xs-12 col-sm-6">
+        <div class="form-group form-group-sm">
+            <label for="txtNombres" class="col-xs-12 col-sm-5 control-label text-left">Nombres</label>
+            <div class="col-xs-12 col-sm-4 nrp">
+                <input type="text"
+                       class="form-control"
+                       id="txtNombres"
+                       name="txtNombres"
+                       placeholder="nombres"
+                       [(ngModel)]="user.Nombres"
+                       required>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-6">
+        <div class="form-group form-group-sm">
+            <label for="txtApellidoPaterno" class="col-xs-12 col-sm-4 control-label text-left">Username</label>
+            <div class="col-xs-12 col-sm-4 nrp">
+                <input type="text"
+                       class="form-control"
+                       id="txtApellidoPaterno"
+                       name="txtApellidoPaterno"
+                       placeholder="apellido paterno"
+                       [(ngModel)]="user.Username"
+                       required>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12 col-sm-6">
+        <div class="form-group form-group-sm">
+            <label for="txtUsername" class="col-xs-12 col-sm-5 control-label text-left">Apellido Paterno</label>
+            <div class="col-xs-12 col-sm-4 nrp">
+                <input type="text"
+                       class="form-control"
+                       id="txtUsername"
+                       name="txtUsername"
+                       placeholder="username"
+                       [(ngModel)]="user.ApellidoPaterno"
+                       required>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-6">
+        <div class="form-group form-group-sm">
+            <label for="txtApellidoMaterno" class="col-xs-12 col-sm-4 control-label text-left">Apellido Materno</label>
+            <div class="col-xs-12 col-sm-4 nrp">
+                <input type="text"
+                       class="form-control"
+                       id="txtApellidoMaterno"
+                       name="txtApellidoMaterno"
+                       placeholder="apellido materno"
+                       [(ngModel)]="user.ApellidoMaterno">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-sm-6">
+        <div class="form-group form-group-sm">
+            <label for="txtpassword" class="col-xs-12 col-sm-5 control-label text-left">Password</label>
+            <div class="col-xs-12 col-sm-4 nrp">
+                <input type="text"
+                       class="form-control"
+                       id="txtpassword"
+                       name="txtpassword"
+                       [(ngModel)]="user.Password"
+                       placeholder="*************">
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+        <div class="form-group form-group-sm">
+            <label for="ddlPais" class="col-xs-12 col-sm-4 control-label text-left">País</label>
+            <div class="col-xs-12 col-sm-4 nrp">
+                <select [(ngModel)]="Pais" class="form-control">
+                    <option *ngFor="let Pais of paises" [value]="Pais | json">
+                        {{Pais.Nombre}}
+                    </option>
+                </select>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<br />
+<div class="float-right">
+    <button type="button" class="btn btn-outline-primary btn-sm" (click)="showMainParent()">Volver</button>
+    <button type="button" class="btn btn-outline-primary btn-sm" (click)="upser()">Grabar</button>
+</div>

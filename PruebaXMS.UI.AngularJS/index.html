@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html >
+<html ng-app='pruebaUI' lang="es">
+<head>
+    <title>Bienvenido</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate, no-store, max-age=0" />
+    <meta http-equiv="Expires" content="0" />
+    <link href="app/bundles/cssBundle.min.css?v=1" rel="stylesheet" />
+
+</head>
+<body>
+   
+    <header>
+        <nav class="navbar navbar-static-top nav navbar-mind navbar-custom" role="navigation">
+            <div class="container">
+                <div class="collapse navbar-collapse navbar-mind-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown mega-dropdown">
+                            <a class="dropdown-toggle cursorPointer" data-toggle="dropdown">Administración <b class="caret"></b></a>
+                            <ul class="dropdown-menu pull-left">
+                                <li><a href="#/admin/usuario">Usuario</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div ng-cloak=ng-cloak>
+        <div ng-view=ng-view>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+    var useMinVersion = false;
+        version = '?v=2';
+        var unminifiedSuffix = '.js' + version;
+        var suffix = '.js' + version;
+        if (useMinVersion)
+            suffix = '.min' + suffix;
+
+        var listaUrl = [];
+
+        listaUrl.push('app/bundles/jQueryScriptsBundle' + suffix);
+        listaUrl.push('app/bundles/scriptsBundle' + suffix);
+        listaUrl.push('app/bundles/app' + unminifiedSuffix);
+        listaUrl.push('app/bundles/appConfig' + unminifiedSuffix);
+        listaUrl.push('app/bundles/controllersBundle' + suffix);
+        listaUrl.push('app/bundles/servicesBundle' + suffix);
+        listaUrl.push('app/bundles/directivesBundle' + suffix);
+        listaUrl.push('app/bundles/componentsBundle' + suffix);
+
+        for (var i = 0; i < listaUrl.length; i++) {
+            document.write('<script src="' + listaUrl[i] + '" type="text/javascript"></scr' + 'ipt>');
+        }</script>
+
+</body>
+</html>

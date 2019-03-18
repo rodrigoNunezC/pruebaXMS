@@ -1,0 +1,60 @@
+﻿<form name="vm.formSubmit">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="table-responsive">
+                <table class="table-hover table-bordered table-condensed table-striped mainTableSpace">
+                    <colgroup>
+                        <col style="width:60%;" />
+                        <col style="width:20%;" />
+                        <col style="width:20%;" />
+
+
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th class="text-left">Nombre Completo</th>
+                            <th class="text-left">Username</th>
+                            <th class="text-left">Pais</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="item in cvm.ui.usuariosToDisplay">
+                            <td class="text-left" style="cursor: pointer;" ng-click="cvm.fx.rowSelected(item)">
+                                {{item.Nombres + ' ' + item.ApellidoPaterno + ' ' + item.ApellidoMaterno}}
+                            </td>
+
+                            <td class="text-left" style="cursor: pointer;" ng-click="cvm.fx.rowSelected(item)">
+                                {{item.Username}}
+                            </td>
+
+                            <td class="text-left" style="cursor: pointer" ; ng-click="cvm.fx.rowSelected(item)">
+                                {{item.Pais.Nombre}}
+                            </td>
+
+                        </tr>
+                        <tr ng-if="cvm.ui.usuarios.length == 0">
+                            <td colspan="12" class="text-center">no se encontraron registros</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <pagination-pager ng-if="cvm.ui.usuarios.length >0" id="pager"
+                              toDisplay="cvm.ui.usuariosToDisplay"
+                              items="cvm.ui.usuarios">
+            </pagination-pager>
+
+            <div class="pull-right">
+                <button id="btnVolver" class="btn btn-sm btn-default" ng-click="cvm.fx.showMainParent()">
+                    <i class="fa fa-arrow-left"></i>
+                    volver
+                </button>
+            </div>
+        </div>
+       
+    </div>
+
+  
+
+    
+</form>

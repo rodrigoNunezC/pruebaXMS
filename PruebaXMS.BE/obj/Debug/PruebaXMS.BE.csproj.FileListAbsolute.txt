@@ -1,0 +1,12 @@
+C:\Users\Rorro\source\repos\PruebaXMS\PruebaXMS.BE\bin\Debug\PruebaXMS.BE.dll
+C:\Users\Rorro\source\repos\PruebaXMS\PruebaXMS.BE\bin\Debug\PruebaXMS.BE.pdb
+C:\Users\Rorro\source\repos\PruebaXMS\PruebaXMS.BE\obj\Debug\PruebaXMS.BE.csprojAssemblyReference.cache
+C:\Users\Rorro\source\repos\PruebaXMS\PruebaXMS.BE\obj\Debug\PruebaXMS.BE.csproj.CoreCompileInputs.cache
+C:\Users\Rorro\source\repos\PruebaXMS\PruebaXMS.BE\obj\Debug\PruebaXMS.BE.dll
+C:\Users\Rorro\source\repos\PruebaXMS\PruebaXMS.BE\obj\Debug\PruebaXMS.BE.pdb
+C:\Users\Rorro\Desktop\PruebaXMS\PruebaXMS.BE\bin\Debug\PruebaXMS.BE.dll
+C:\Users\Rorro\Desktop\PruebaXMS\PruebaXMS.BE\bin\Debug\PruebaXMS.BE.pdb
+C:\Users\Rorro\Desktop\PruebaXMS\PruebaXMS.BE\obj\Debug\PruebaXMS.BE.csproj.CoreCompileInputs.cache
+C:\Users\Rorro\Desktop\PruebaXMS\PruebaXMS.BE\obj\Debug\PruebaXMS.BE.dll
+C:\Users\Rorro\Desktop\PruebaXMS\PruebaXMS.BE\obj\Debug\PruebaXMS.BE.pdb
+C:\Users\Rorro\Desktop\PruebaXMS\PruebaXMS.BE\obj\Debug\PruebaXMS.BE.csprojAssemblyReference.cache
